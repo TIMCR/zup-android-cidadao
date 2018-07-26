@@ -116,7 +116,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <br.com.lfdb.zup.widget.SeekbarWithIntervals
+            <br.com.lfdb.particity.widget.SeekbarWithIntervals
                 android:id="@+id/seekBar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -158,7 +158,7 @@
 
     </ScrollView>
 
-    <br.com.lfdb.zup.view.CategoryPicker
+    <br.com.lfdb.particity.view.CategoryPicker
         android:id="@+id/formCategorias"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

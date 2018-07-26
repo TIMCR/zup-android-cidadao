@@ -21,7 +21,7 @@
             android:padding="10dp"
             android:text="@string/confidential_disclaimer" />
 
-        <br.com.lfdb.zup.widget.EditTextComentario
+        <br.com.lfdb.particity.widget.EditTextComentario
             android:id="@+id/comentario"
             android:layout_width="match_parent"
             android:layout_height="@dimen/comments_box_size"

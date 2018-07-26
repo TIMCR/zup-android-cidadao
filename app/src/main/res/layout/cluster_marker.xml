@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<br.com.lfdb.zup.view.SquaredFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<br.com.lfdb.particity.view.SquaredFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -14,4 +14,4 @@
         android:textStyle="bold"
         tools:text="15" />
 
-</br.com.lfdb.zup.view.SquaredFrameLayout>
+</br.com.lfdb.particity.view.SquaredFrameLayout>

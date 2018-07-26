@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="light_blue">#2ab4db</color>
+    <color name="light_blue">#37A47B</color>
     <color name="zup_white">#fff</color>
     <color name="zup_silver">#e6e6e6</color>
     <color name="zup_lightsilver">#f3f3f3</color>
-    <color name="zup_blue_alternative">#2ab4dc</color>
+    <color name="zup_blue_alternative">#004B2F</color>
     <color name="zup_black">#000</color>
     <color name="zup_darkgray">#333</color>
 </resources>

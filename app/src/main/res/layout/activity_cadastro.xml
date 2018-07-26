@@ -14,7 +14,7 @@
       android:paddingRight="@dimen/padding_3_icons"
       android:paddingTop="@dimen/padding_default">
 
-    <br.com.lfdb.zup.widget.CustomFontTextView
+    <br.com.lfdb.particity.widget.CustomFontTextView
         android:id="@+id/addAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,7 +23,7 @@
         android:textColor="@color/zup_black"
         android:textSize="@dimen/title_text_size"/>
 
-    <br.com.lfdb.zup.widget.CustomFontTextView
+    <br.com.lfdb.particity.widget.CustomFontTextView
         android:id="@+id/btnCancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -66,7 +66,7 @@
         android:orientation="vertical"
         android:paddingBottom="@dimen/margin">
 
-      <br.com.lfdb.zup.widget.CustomFontEditText
+      <br.com.lfdb.particity.widget.CustomFontEditText
           android:id="@+id/nameField"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
@@ -80,7 +80,7 @@
           android:textColor="@color/zup_black"
           android:textSize="@dimen/navigation_text_size"/>
 
-      <br.com.lfdb.zup.widget.CustomFontEditText
+      <br.com.lfdb.particity.widget.CustomFontEditText
           android:id="@+id/emailField"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
@@ -99,7 +99,7 @@
           android:orientation="horizontal"
           android:weightSum="2">
 
-        <br.com.lfdb.zup.widget.CustomFontEditText
+        <br.com.lfdb.particity.widget.CustomFontEditText
             android:id="@+id/passField"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -113,7 +113,7 @@
             android:textColor="@color/zup_black"
             android:textSize="@dimen/navigation_text_size"/>
 
-        <br.com.lfdb.zup.widget.CustomFontEditText
+        <br.com.lfdb.particity.widget.CustomFontEditText
             android:id="@+id/confirmPassField"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -135,7 +135,7 @@
           android:orientation="horizontal"
           android:weightSum="2">
 
-        <br.com.lfdb.zup.widget.PhoneEditText
+        <br.com.lfdb.particity.widget.PhoneEditText
             android:id="@+id/phoneField"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -148,7 +148,7 @@
             android:textColor="@color/zup_black"
             android:textSize="@dimen/navigation_text_size"/>
 
-        <br.com.lfdb.zup.widget.CpfEditText
+        <br.com.lfdb.particity.widget.CpfEditText
             android:id="@+id/documentField"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -162,7 +162,7 @@
             android:textSize="@dimen/navigation_text_size"/>
       </LinearLayout>
 
-      <br.com.lfdb.zup.widget.CustomFontEditText
+      <br.com.lfdb.particity.widget.CustomFontEditText
           android:id="@+id/addressField"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
@@ -181,7 +181,7 @@
           android:orientation="horizontal"
           android:weightSum="2">
 
-        <br.com.lfdb.zup.widget.CustomFontEditText
+        <br.com.lfdb.particity.widget.CustomFontEditText
             android:id="@+id/complField"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -195,7 +195,7 @@
             android:textColor="@color/zup_black"
             android:textSize="@dimen/navigation_text_size"/>
 
-        <br.com.lfdb.zup.widget.CepEditText
+        <br.com.lfdb.particity.widget.CepEditText
             android:id="@+id/cepField"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -209,7 +209,7 @@
             android:textSize="@dimen/navigation_text_size"/>
       </LinearLayout>
 
-      <br.com.lfdb.zup.widget.CustomFontEditText
+      <br.com.lfdb.particity.widget.CustomFontEditText
           android:id="@+id/neighborhoodField"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
@@ -222,7 +222,7 @@
           android:textColor="@color/zup_black"
           android:textSize="@dimen/navigation_text_size"/>
 
-      <br.com.lfdb.zup.widget.CustomFontEditText
+      <br.com.lfdb.particity.widget.CustomFontEditText
           android:id="@+id/cityField"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="register_success"> Registrado com sucesso</string>
-    <string name="google_key">AIzaSyCU4b3Ct3TydDXtLLxT38MXAhlf3OkYfrg</string>
-    <string name="app_name">Particity</string>
+    <string name="google_key">AIzaSyApLV1JC80npt9KMZ0By-aaplW-_ZMOjjM</string>
+    <string name="app_name">VcMCR</string>
     <string name="appFacebook_id">0</string>
     <string name="minha_conta">Minha Conta</string>
     <string name="solicite">Solicite</string>

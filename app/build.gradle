@@ -37,12 +37,19 @@ android {
     defaultConfig {
         minSdkVersion 10
         targetSdkVersion 25
-        versionCode 10104
-        versionName '1.1.4'
+        versionCode 10111
+        versionName '1.1.11'
         multiDexEnabled = true
+        applicationId 'br.com.lfdb.vcmcr'
     }
     productFlavors {
-
+        vcmcr {
+            minSdkVersion 10
+            applicationId 'br.com.lfdb.vcmcr'
+            targetSdkVersion 25
+            versionCode 10111
+            versionName '1.1.11'
+        }
     }
     buildTypes {
         release {
@@ -109,7 +116,7 @@ dependencies {
     compile('com.facebook.android:facebook-android-sdk:3.23.1') {
         exclude module: 'support-v4'
     }
-    compile fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+    compile fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
     compile project(':lib-simplecropimage')
     compile project(':lib-progresswheels')
     compile project(':lib-androidviewpagerindicator')

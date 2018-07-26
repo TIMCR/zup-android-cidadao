@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="br.com.lfdb.zup">
+    package="br.com.lfdb.particity">
 
-    <!--<permission-->
-        <!--android:name="${applicationId}.permission.MAPS_RECEIVE"-->
-        <!--android:protectionLevel="signature" />-->
-    <!--<permission-->
-        <!--android:name="${applicationId}.permission.C2D_MESSAGE"-->
-        <!--android:protectionLevel="signature" />-->
+    <permission
+        android:name="${applicationId}.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+    <permission
+        android:name="${applicationId}.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
 
     <uses-permission android:name="${applicationId}.permission.MAPS_RECEIVE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -34,7 +34,7 @@
         android:required="true" />
 
     <application
-        android:name="br.com.lfdb.zup.ZupApplication"
+        android:name=".ZupApplication"
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:icon="@drawable/ic_launcher"
@@ -42,7 +42,7 @@
         android:largeHeap="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="br.com.lfdb.zup.OpeningActivity"
+            android:name=".OpeningActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -51,59 +51,59 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="br.com.lfdb.zup.MainActivity"
+            android:name=".MainActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name="br.com.lfdb.zup.SplashActivity"
+            android:name=".SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
         <activity
-            android:name="br.com.lfdb.zup.SoliciteActivity_"
+            android:name=".SoliciteActivity_"
             android:screenOrientation="portrait" />
         <activity
-            android:name="br.com.lfdb.zup.SolicitacaoDetalheActivity"
+            android:name=".SolicitacaoDetalheActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="br.com.lfdb.zup.EditarContaActivity"
+            android:name=".EditarContaActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name="br.com.lfdb.zup.TermosDeUsoActivity"
+            android:name=".TermosDeUsoActivity"
             android:label="@string/termos_de_uso"
             android:screenOrientation="portrait" />
         <activity
-            android:name="br.com.lfdb.zup.CadastroActivity_"
+            android:name=".CadastroActivity_"
             android:screenOrientation="portrait" />
         <activity
-            android:name="br.com.lfdb.zup.RedesSociaisCadastroActivity"
+            android:name=".RedesSociaisCadastroActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="br.com.lfdb.zup.WarningActivity"
+            android:name=".WarningActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="br.com.lfdb.zup.FiltroExploreNovoActivity"
+            android:name=".FiltroExploreNovoActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="br.com.lfdb.zup.FiltroEstatisticasNovoActivity"
+            android:name=".FiltroEstatisticasNovoActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="br.com.lfdb.zup.LoginActivity"
+            android:name=".LoginActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="br.com.lfdb.zup.RecuperarSenhaActivity"
+            android:name=".RecuperarSenhaActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="br.com.lfdb.zup.DetalheMapaActivity"
+            android:name=".DetalheMapaActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="br.com.lfdb.zup.social.auth.TwitterAuth"
+            android:name=".social.auth.TwitterAuth"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity
-            android:name="br.com.lfdb.zup.social.auth.GooglePlusAuth"
+            android:name=".social.auth.GooglePlusAuth"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity
-            android:name="br.com.lfdb.zup.social.auth.FacebookAuth"
+            android:name=".social.auth.FacebookAuth"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity
             android:name="eu.janmuller.android.simplecropimage.CropImage"
@@ -113,7 +113,7 @@
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <receiver
-            android:name="br.com.lfdb.zup.receiver.PushReceiver"
+            android:name=".receiver.PushReceiver"
             android:permission="com.google.android.c2dm.permission.SEND">
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
@@ -140,7 +140,7 @@
 
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="br.com.lfdb.zup.provider"
+            android:authorities="br.com.lfdb.particity.provider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data

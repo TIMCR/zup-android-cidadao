@@ -24,13 +24,9 @@ apply plugin: 'me.tatarka.retrolambda'
 def AAVersion = '3.3'
 
 android {
-    lintOptions{
-        disable 'MissingTranslation'
-    }
-
-    compileSdkVersion 25
-    buildToolsVersion '27.0.3'
-    useLibrary 'org.apache.http.legacy'
+    compileSdkVersion 24
+    buildToolsVersion '24.0.0'
+    useLibrary  'org.apache.http.legacy'
     packagingOptions {
         exclude 'META-INF/DEPENDENCIES'
         exclude 'META-INF/NOTICE'
@@ -39,35 +35,14 @@ android {
         exclude 'META-INF/NOTICE.txt'
     }
     defaultConfig {
-        minSdkVersion 22
+        minSdkVersion 10
         targetSdkVersion 25
         versionCode 10104
         versionName '1.1.4'
         multiDexEnabled = true
-        applicationId 'br.com.lfdb.zup'
     }
     productFlavors {
-        zup {
-            minSdkVersion 22
-            applicationId 'br.com.lfdb.zup'
-            targetSdkVersion 25
-            versionCode 10000
-            versionName '1.0.0'
-        }
-        vcsbc {
-            minSdkVersion 22
-            applicationIdSuffix '.vcsbc'
-            targetSdkVersion 25
-            versionCode 10000
-            versionName '1.0.0'
-        }
-        particity {
-            minSdkVersion 22
-            applicationId 'br.com.lfdb.particity'
-            targetSdkVersion 25
-            versionCode 10104
-            versionName '1.1.4'
-        }
+
     }
     buildTypes {
         release {
@@ -82,26 +57,15 @@ android {
         javaMaxHeapSize "4g"
     }
     sourceSets {
-        zup {
+        main {
             manifest.srcFile 'src/main/AndroidManifest.xml'
-            java.srcDirs = ['src/zup/java', 'build/generated/source/apt/${variant.dirName}']
-
-        }
-        vcsbc {
-            manifest.srcFile 'src/main/AndroidManifest.xml'
-            java.srcDirs = ['src/vcsbc/java', 'build/generated/source/apt/${variant.dirName}']
-            resources.srcDirs = ['src/vcsbc/res']
-            res.srcDirs = ['src/vcsbc/res']
-            assets.srcDirs = ['src/vcsbc/assets']
-        }
-        particity {
-            manifest.srcFile 'src/main/AndroidManifest.xml'
-            java.srcDirs = ['src/particity/java', 'build/generated/source/apt/${variant.dirName}']
-            resources.srcDirs = ['src/particity/res']
-            res.srcDirs = ['src/particity/res']
-            assets.srcDirs = ['src/particity/assets']
+            java.srcDirs = ['src/main/java', 'build/generated/source/apt/${variant.dirName}']
+            resources.srcDirs = ['src/main/res']
+            res.srcDirs = ['src/main/res']
+            assets.srcDirs = ['src/main/assets']
         }
     }
+
     packagingOptions {
         exclude 'META-INF/DEPENDENCIES.txt'
         exclude 'META-INF/LICENSE.txt'
@@ -145,7 +109,7 @@ dependencies {
     compile('com.facebook.android:facebook-android-sdk:3.23.1') {
         exclude module: 'support-v4'
     }
-    compile fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
+    compile fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
     compile project(':lib-simplecropimage')
     compile project(':lib-progresswheels')
     compile project(':lib-androidviewpagerindicator')
@@ -161,7 +125,7 @@ dependencies {
 apt {
     arguments {
         androidManifestFile variant.outputs[0].processResources.manifestFile
-        resourcePackageName 'br.com.lfdb.zup'
+        resourcePackageName 'br.com.lfdb.particity'
     }
 }
 

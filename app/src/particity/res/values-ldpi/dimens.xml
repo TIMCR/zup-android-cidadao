@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="image_resize">75dp</dimen>
-    <dimen name="splash_margin">245dp</dimen>
-    <dimen name="map_size">150dp</dimen>
-    <dimen name="view_pager_height">165dp</dimen>
-</resources>

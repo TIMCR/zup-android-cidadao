@@ -37,8 +37,8 @@ android {
     defaultConfig {
         minSdkVersion 10
         targetSdkVersion 25
-        versionCode 10111
-        versionName '1.1.11'
+        versionCode 1020001
+        versionName '1.2.0.1'
         multiDexEnabled = true
         applicationId 'br.com.lfdb.vcmcr'
     }
@@ -47,8 +47,8 @@ android {
             minSdkVersion 10
             applicationId 'br.com.lfdb.vcmcr'
             targetSdkVersion 25
-            versionCode 10111
-            versionName '1.1.11'
+            versionCode 1020001
+            versionName '1.2.0.1'
         }
     }
     buildTypes {

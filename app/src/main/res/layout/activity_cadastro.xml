@@ -8,7 +8,7 @@
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_alignParentTop="true"
-      android:background="@android:color/white"
+      android:background="@color/zup_blue_alternative"
       android:paddingBottom="@dimen/padding_default"
       android:paddingLeft="@dimen/padding_3_icons"
       android:paddingRight="@dimen/padding_3_icons"
@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:text="@string/nova_conta"
-        android:textColor="@color/zup_black"
+        android:textColor="@android:color/white"
         android:textSize="@dimen/title_text_size"/>
 
     <br.com.lfdb.particity.widget.CustomFontTextView
@@ -31,7 +31,7 @@
         android:layout_centerVertical="true"
         android:background="@drawable/button_black_bg"
         android:text="@string/cancelar"
-        android:textColor="@color/zup_white"
+        android:textColor="@color/zup_blue_alternative"
         android:textSize="@dimen/topbar_button_font_size"/>
 
     <TextView
@@ -40,9 +40,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:background="@drawable/button_blue_bg"
+        android:background="@drawable/button_white_bg"
         android:text="@string/criar"
-        android:textColor="@color/zup_white"
+        android:textColor="@color/zup_blue_alternative"
+        android:textStyle="bold"
         android:textSize="@dimen/topbar_button_font_size"/>
   </RelativeLayout>
 

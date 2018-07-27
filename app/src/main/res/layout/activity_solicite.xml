@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:background="#fff"
+        android:background="@color/zup_blue_alternative"
         android:paddingBottom="10dp"
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
@@ -19,9 +19,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
-            android:background="@drawable/button_black_bg"
+            android:background="@drawable/button_white_bg"
             android:text="@string/cancelar"
-            android:textColor="#fff" />
+            android:textColor="@color/zup_blue_alternative" />
 
         <TextView
             android:id="@+id/titulo"
@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="@string/nova_solicitacao"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:textSize="@dimen/title_text_size" />
     </RelativeLayout>
 

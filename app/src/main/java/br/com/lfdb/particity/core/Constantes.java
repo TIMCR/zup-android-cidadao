@@ -8,7 +8,7 @@ public class Constantes {
 
     public static final String REST_URL = "http://vc.mcr.pr.gov.br:8282";
     public static final String WEBSITE_URL = "http://vc.mcr.pr.gov.br";
-    public static final String PLACES_KEY = "AIzaSyApLV1JC80npt9KMZ0By-aaplW-_ZMOjjM";
+    public static final String PLACES_KEY = "AIzaSyAT1cH2JnttvzQjY4zXH2_NnsD9Acq4480";
 
     public static final String NAMESPACE_DEFAULT = "1";
     public static final double INITIAL_LATITUDE = -24.5581316;
